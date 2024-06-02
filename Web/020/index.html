@@ -223,7 +223,7 @@
 					}, 1000);
 				}, 2500);
 			}, 1000);
-		}, 10000);
+		}, 15000);
 
 		// 生成虚拟数据
 		for (var i = 0; i < 8; i++) {
@@ -546,8 +546,8 @@
 
 			// 鼠标控制
 			controls = new THREE.TrackballControls(camera, renderer.domElement);
-			controls.rotateSpeed = 0.5;
-			controls.minDistance = 500;
+			controls.rotateSpeed = 0.1;
+			controls.minDistance = 200;
 			controls.maxDistance = 6000;
 			controls.addEventListener('change', render);
 
